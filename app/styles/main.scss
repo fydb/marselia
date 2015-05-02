@@ -1,0 +1,579 @@
+/*
+ * Web Starter Kit
+ *
+ * Multi-screen layout styles for your page. Brought to you by the
+ * Web Starter Kit team.
+ *
+ */
+@import '_h5bp';
+
+@import 'materialize/materialize';
+
+@import 'slick/slick';
+@import 'slick/slick-theme';
+
+@import 'photoswipe/main';
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 2; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+/* ==================== Header ==================== */
+
+header {
+  position: relative;
+  width: 100%;
+  height: 174px;
+  top: 0;
+  left: 0;
+  background-color: none;
+}
+.logo {
+}
+.menu {
+  color: #00acc1;
+  background-color: none;
+  width: auto;
+  height: 150px;
+  line-height: 150px;
+  a {
+    color: #00acc1;
+  }
+  .nav-wrapper {
+    position: relative;
+    height: 100%;
+    i {
+      display: block;
+      font-size: 2rem;
+    }
+  }
+  ul {
+    margin: 0;
+    li {
+      -webkit-transition: background-color .3s;
+      -moz-transition: background-color .3s;
+      -o-transition: background-color .3s;
+      -ms-transition: background-color .3s;
+      transition: background-color .3s;
+      float: left;
+      padding: 0;
+      &:hover, &.active {
+        background-color: none;
+      }
+    }
+    a {
+      font-size: 1rem;
+      color: #00838f;
+      display: block;
+      padding: 0 15px;
+      text-transform: uppercase;
+    }
+    &.left {
+      float: left;
+    }
+  }
+}
+@media only screen and (min-width : 993px) {
+  .navbar-fixed {
+    top: -200px;
+    position: fixed;
+    &.fixed_show {
+      top: 0;
+      -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 0.5s; /* Firefox < 16 */
+      -ms-animation: fadein 0.5s; /* Internet Explorer */
+      -o-animation: fadein 0.5s; /* Opera < 12.1 */
+      animation: fadein 0.5s;
+    }
+  }
+}
+
+
+.side-logo {
+  display: block;
+  height: 120px;
+  padding-top: 8px !important;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.side-nav li {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: white;
+}
+
+nav .brand-logo {
+  height: 62px;
+  width: 62px;
+}
+
+.logo {
+  height: 100%;
+  padding: 4px 0;
+}
+
+@media #{$medium-and-down} {
+
+  nav .brand-logo {
+    height: 60px;
+    width: 60px;
+    left: 0;
+    padding-left: 10px;
+    position: relative;
+  }
+
+  .logo {
+    height: 100%;
+    padding: 4px 0;
+  }
+}
+@media #{$medium-and-down} {
+  nav .button-collapse {
+    right: 30px;
+  }
+  nav .button-collapse i {
+    font-size: 1.375rem;
+    height: 56px;
+    line-height: 56px; 
+  }
+}
+
+.caps {
+  font-variant: small-caps;
+}
+
+.image-slider {
+  overflow: hidden;
+}
+
+/*-----Parallax------*/
+.parallax-container {
+  min-height: 260px;
+  height: auto;
+  color: white;
+  -moz-box-shadow: inset 0 -8px 8px -8px rgba(0,0,0,0.8);
+  -webkit-box-shadow: inset 0 -8px 8px -8px rgba(0,0,0,0.8);
+  box-shadow: inset 0 -8px 8px -8px rgba(0,0,0,0.8);
+  .section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .parallax-container {
+    min-height: 140px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .parallax-container {
+    min-height: 200px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 100%;
+  }
+}
+
+/*-----/Parallax------*/
+
+.pr-center {
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  header {
+    position: relative;
+    width: 100%;
+    height: 174px;
+    top: 0;
+    left: 0;
+    background-color: none;
+  }
+  .logo {
+  }
+  .menu {
+    color: #00acc1;
+    background-color: none;
+    width: auto;
+    height: 150px;
+    line-height: 150px;
+    a {
+      color: #00acc1;
+    }
+    .nav-wrapper {
+      position: relative;
+      height: 100%;
+      i {
+        display: block;
+        font-size: 0.7rem;
+      }
+    }
+    ul {
+      margin: 0;
+      li {
+        -webkit-transition: background-color .3s;
+        -moz-transition: background-color .3s;
+        -o-transition: background-color .3s;
+        -ms-transition: background-color .3s;
+        transition: background-color .3s;
+        float: left;
+        padding: 0;
+        &:hover, &.active {
+          background-color: none;
+        }
+      }
+      a {
+        font-size: 0.8rem;
+        color: #00838f;
+        display: block;
+        padding: 0 8px;
+        text-transform: uppercase;
+      }
+      &.left {
+        float: left;
+      }
+    }
+  }
+}
+
+/* --------------------------------- */
+/*  About
+ ----------------------------------- */
+
+.about-us {
+  padding: 50px 0;
+}
+
+/* --------------------------------- */
+/*  Maldives
+ ----------------------------------- */
+
+.modis {
+  padding: 50px 0;
+}
+
+.feat {
+  margin-bottom: 10px;
+}
+
+/* --------------------------------- */
+/*  Experience
+ ----------------------------------- */
+
+#experience {
+  margin-top: 24px;
+}
+
+@media only screen and (max-width: 992px) {
+  #experience {
+    margin-top: 34px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  #experience {
+    margin-top: 24px;
+  }
+}
+
+.experience-wrap {
+  padding: 110px 0;
+}
+
+.section-head {
+  margin-bottom: 65px;
+}
+
+.experience-text {
+  color: #fff;  
+}
+
+.card {
+  margin: 0;
+}
+
+.rev-title-wrap p, .card .card-content p {
+  line-height: inherit;
+  color: #727272;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.single-post {
+  margin-bottom: 30px;
+}
+
+.post-title-link {
+  display: table;
+  margin: 0px 0px 15px !important;
+}
+
+.single-card-box .card .card-title i {
+  color: #727272;
+}
+
+.experience-inner .card .card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-title-top {
+  color: #727272;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  line-height: 1.7;
+}
+
+.valign-wrapper.card-img-wrap {
+  border-bottom: 1px solid #eee;
+  min-height: 140px;
+}
+
+.card .card-content {
+  padding: 13px 20px;
+}
+
+.single-card-box .card .card-title {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.card {
+  a {
+    font-size: 14px;
+    text-transform: inherit;
+  }
+  i {
+    font-size: 24px;
+  }
+}
+
+.rev-title-wrap {
+  padding: 13px 19px;
+  border-bottom: 1px solid #eee;
+}
+
+.rev-content {
+  padding: 20px;
+  color: #727272;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+/* --------------------------------- */
+/*  Services
+ ----------------------------------- */
+
+ .service {
+  padding: 150px 0px;
+ }
+
+/*=========== Gallery ===============*/
+
+.gallery-wrapper {
+  padding: 40px 0px;
+}
+
+.pic-gallery {
+  width: 100%;
+  float: left;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  figure {
+    display: block;
+    float: left;
+    margin: 0 5px 10px 10px;
+    width: 180px;
+    a {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      display: block;
+      &:hover {
+        .gallery_fadder {
+          -webkit-transition-duration: 0.2s;
+          -o-transition-duration: 0.2s;
+          -moz-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+          opacity: 0.8;
+        }
+        .gallery_ico {
+          -webkit-transition-duration: 0.2s;
+          -webkit-transform: scale(1, 1);
+          transition-duration: 0.2s;
+          transform: scale(1, 1);
+          opacity: 0.99;
+        }
+      }
+    }
+  }
+  figcaption {
+    display: none;
+  }
+}
+.gallery_ico {
+  top: 50%;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transform: scale(2, 2);
+  transition-duration: 0.2s;
+  transform: scale(2, 2);
+  opacity: 0;
+  z-index: 300;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  margin: -20px 0 0 -20px;
+  left: 50%;
+  i {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+.gallery_fadder {
+  left: 0;
+  top: 0;
+  overflow:hidden;
+  -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #42bdc2;
+  z-index: 100;
+  opacity: 0;
+}
+/* devices */
+@media screen and (max-width: 1200px) {
+  .pic-gallery {
+    width: 100%;
+    float: left;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    figure {
+      display: block;
+      float: left;
+      margin: 0 5px 10px 10px;
+      width: 120px;
+    }
+    figcaption {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .pic-gallery {
+    width: 100%;
+    float: left;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    figure {
+      display: block;
+      float: left;
+      margin: 0 5px 10px 10px;
+      width: 110px;
+    }
+    figcaption {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .pic-gallery {
+    width: 100%;
+    float: left;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    figure {
+      display: block;
+      float: left;
+      margin: 0 5px 10px 10px;
+      width: 110px;
+    }
+    figcaption {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width:640px) {
+  .pic-gallery {
+    width: 100%;
+    float: left;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    figure {
+      display: block;
+      float: left;
+      margin: 0 5px 12px 12px;
+      width: 100px;
+    }
+    figcaption {
+      display: none;
+    }
+  }
+}

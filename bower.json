@@ -1,0 +1,21 @@
+{
+  "name": "Mareselia",
+  "version": "0.0.0",
+  "authors": [
+    "fydb <eyelum@gmail.com>"
+  ],
+  "description": "Marselia Maldives",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "~0.96.1",
+    "slick.js": "~1.5.2",
+    "photoswipe": "~4.0.7"
+  }
+}

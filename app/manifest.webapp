@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "Marselia Maldives",
+  "launch_path": "/index.html",
+  "description": "Luxury yacht Marselia Star built for the real ocean safari.",
+  "icons": {
+    "128": "/images/touch/icon-128x128.png"
+  },
+  "developer": {
+    "name": "",
+    "url": ""
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Marselia Maldives",
+      "description": "Luxury yacht Marselia Star built for the real ocean safari."
+    }
+  }
+}
