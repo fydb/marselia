@@ -284,6 +284,11 @@ nav .brand-logo {
   padding: 50px 0;
 }
 
+.cabin-box {
+  overflow: hidden;
+}
+
+
 /* --------------------------------- */
 /*  Maldives
  ----------------------------------- */
@@ -318,6 +323,7 @@ nav .brand-logo {
 
 .experience-wrap {
   padding: 110px 0;
+  overflow: hidden;
 }
 
 .section-head {
@@ -337,15 +343,6 @@ nav .brand-logo {
   color: #727272;
   font-size: 14px;
   margin-top: 10px;
-}
-
-.single-post {
-  margin-bottom: 30px;
-}
-
-.post-title-link {
-  display: table;
-  margin: 0px 0px 15px !important;
 }
 
 .single-card-box .card .card-title i {

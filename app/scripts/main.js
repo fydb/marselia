@@ -6,7 +6,8 @@ $('.image-slider').slick({
   arrows: false,
   fade: true,
   cssEase: 'linear',
-  autoplay: true
+  autoplay: true,
+  pauseOnHover: false
 });
 
 $('.cabin-slider').slick({
